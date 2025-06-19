@@ -17,6 +17,7 @@ body, html{
   width: 225px;
   background-color: #000000;
   padding: 20px;
+  padding-right: 7px;
   padding-bottom: 95px;
   display: flex;
   flex-direction: column;
@@ -44,6 +45,22 @@ body, html{
   gap: 10px;
   font-size: 12px;
   cursor: pointer;
+}
+.sidebar nav ul li.green{
+  position: relative;
+  color: white; 
+  padding-left: 5px;
+}
+
+.sidebar nav ul li.green::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2.5px;
+  height: 100%;
+  background-color: #1ED760;
+  border-radius: 1px;
 }
 .playlist{
     color: white;
