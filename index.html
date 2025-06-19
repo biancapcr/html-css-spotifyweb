@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify Web</title>
+    <title>Spotify</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+    <div class="app-container">
     <aside class="sidebar">
+        <!-- Sidebar top -->
       <div class="sidebar-top">
         <img src="./assets/img/logo.svg" alt="spotify logo" class="logo">
         <nav>
@@ -20,6 +23,7 @@
           <h3 class="playlist">PLAYLIST</h3>
         </nav>
       </div>
+      <!-- Sidebar middle -->
       <div class="sidebar-middle">
             <div class="playlist-actions">
                 <div class="playlist-items">
@@ -37,6 +41,7 @@
                     </ul>
                 </div>
             </div>
+            <!-- Sidebar bottom -->
         <div class="sidebar-bottom">
             <div class="install-app">
                 <img src="./assets/img/download.svg" alt="download">
@@ -48,6 +53,45 @@
                 <span class="name">John Doe</span>
             </div>
         </div>
-    </aside>
+    </div>
+    <!-- Footer -->
+        <footer class="player">
+  <div class="player-left">
+    <img src="./assets/img/sinister.jpeg" alt="sinister">
+    <div class="track-info">
+      <h4>Sinister</h4>
+      <p>Brano Nome</p>
+    </div>
+    <div class="track-icons">
+      <i class="fa-regular fa-heart"></i>
+      <i class="fa-regular fa-folder"></i>
+    </div>
+  </div>
+  <div class="player-center">
+    <div class="controls">
+      <i class="fa-solid fa-shuffle"></i>
+      <i class="fa-solid fa-backward-step"></i>
+      <div class="play-button"><i class="fa-solid fa-play"></i></div>
+      <i class="fa-solid fa-forward-step"></i>
+      <i class="fa-solid fa-repeat"></i>
+    </div>
+    <div class="progress">
+      <span>0:25</span>
+      <div class="bar">
+        <div class="bar-fill"></div>
+      </div>
+      <span>4:35</span>
+    </div>
+  </div>
+  <div class="player-right">
+    <i class="fa-solid fa-list"></i>
+    <i class="fa-solid fa-display"></i>
+    <i class="fa-solid fa-volume-high"></i>
+    <div class="volume-bar">
+      <div class="volume-fill"></div>
+    </div>
+  </div>
+</footer>
+</aside>
 </body>
 </html>
