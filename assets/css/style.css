@@ -192,14 +192,14 @@ body, html{
   gap: 20px;
 }
 .controls i{
-  font-size: 14px;
+  font-size: 18px;
   color: white;
   cursor: pointer;
 }
 .play-button{
-  width: 35px;
-  height: 35px;
-  border: 3.7px solid white;
+  width: 36px;
+  height: 36px;
+  border: 3.4px solid white;
   border-radius: 50%;
   background-color: transparent;
   display: flex;
@@ -207,9 +207,11 @@ body, html{
   justify-content: center;
   cursor: pointer;
 }
-.play-button i{
-  font-size: 18px;
+.play-button i {
+  font-size: 20px;
   color: white;
+  position: relative;
+  transform: translateX(1px);
 }
 .progress{
   display: flex;
