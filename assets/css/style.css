@@ -225,10 +225,10 @@ body, html{
   cursor: pointer;
 }
 .play-button i{
-  font-size: 22px;
+  font-size: 21px;
   color: white;
   position: relative;
-  transform: translateX(1px);
+  transform: translateX(1.2px);
 }
 .progress{
   display: flex;
