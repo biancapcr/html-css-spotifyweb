@@ -224,7 +224,7 @@ body, html{
   justify-content: center;
   cursor: pointer;
 }
-.play-button i {
+.play-button i{
   font-size: 20px;
   color: white;
   position: relative;
@@ -244,12 +244,34 @@ body, html{
   height: 4px;
   background-color: #555;
   border-radius: 2px;
-  overflow: hidden;
+  position: relative;
+  overflow: visible;
+  cursor: pointer;
 }
 .progress .bar-fill{
-  width: 25%;
+  width: 18%;
   height: 100%;
+  background-color: #b3b3b3;
+  position: relative;
+  transition: background-color 0.2s;
+}
+.progress .point{
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+  width: 12px;
+  height: 12px;
   background-color: white;
+  border-radius: 50%;
+  z-index: 2;
+}
+.progress:hover .bar-fill{
+  background-color: #1ED760;
+}
+.progress:hover .point{
+  display: block;
 }
 .player-right{
   flex: 1;
@@ -270,7 +292,8 @@ body, html{
   overflow: hidden;
 }
 .volume-fill{
-  width: 40%;
+  width: 24%;
   height: 100%;
   background-color: white;
+  border-radius: 2px;
 }
