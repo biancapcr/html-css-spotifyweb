@@ -178,9 +178,105 @@ html, body{
     border-radius: 50%;
   }
 /* ========== PLAYER ========== */
-
+.player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 90px;
+    padding: 8px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+  .player-left img{
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+  }
+   .track-info p{
+    margin: 0;
+    font-weight: 600;
+  }
+  .track-icons{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .player-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    flex: 1;
+  }
+  .controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .controls i{
+    font-size: 16px;
+  }
+  .play-btn{
+    width: 35px;
+    height: 34px;
+    border: 3px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .play-btn i{
+    font-size: 20px;
+    transform: translateX(1px);
+  }
+  .progress{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 10px;
+    width: 100%;
+    padding: 0 10px;
+  }
+  .sidebar-bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: auto;
+    padding-bottom: 10px;
+    align-items: center;
+  }
+  .install-app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .install-app img{
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+  }
+  .install-app span{
+    display: none;
+  }
+  .user-profile img{
+    width: 23px;
+    height: 23px;
+  }
+  .user-profile .name{
+    display: none;
 }
-
+.divider{
+    display: none;
+}
+  .player-right{
+    gap: 8px;
+  }
+}
 
 
 
