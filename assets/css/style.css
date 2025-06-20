@@ -52,7 +52,7 @@ section{
   font-size: 12px;
   cursor: pointer;
 }
-.sidebar nav ul li:hover {
+.sidebar nav ul li:hover{
   color: white;
   transition: 0.3s;
 }
@@ -61,7 +61,6 @@ section{
   color: white; 
   padding-left: 5px;
 }
-
 .sidebar nav ul li.green::before{
   content: "";
   position: absolute;
@@ -378,7 +377,7 @@ section{
 .upgrade-btn{
   background-color: transparent;
   color: #fff;
-  border: 2px solid #fff;
+  border: 1.5px solid #fff;
   border-radius: 999px;
   font-size: 12px;
   font-weight: 700;
@@ -531,7 +530,6 @@ section{
 }
 
 /* Grid 3 */
-
 .popular-artists h2, .popular-artists .subtitle{
   color: white;
 }
