@@ -1,0 +1,71 @@
+/************************************************
+    SOLUZIONI RESPONSIVE
+ ************************************************/
+/*  Extra Small (XS): <576px  */
+@media all and (max-width: 575px){
+  .app-container{
+    flex-direction: column;
+  }
+  html, body{
+    overflow-x: hidden;
+    background-color: #191922;
+  }
+  .sidebar{
+    width: 48px;
+    padding: 20px 0 95px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .sidebar .logo{
+    content: url('../img/logo-small.svg');
+    width: 24px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 24px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+  }
+  .sidebar nav ul li.green::before{
+    display: none;
+  }
+  .sidebar nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+  }
+  .sidebar nav ul li{
+    list-style: none;
+    font-size: 0;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    position: relative;
+  }
+  .sidebar nav ul li img{
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+  }
+  .sidebar .playlist, .sidebar-middle, .sidebar-bottom{
+    display: none;
+  }
+ .main-wrapper {
+    margin-left: 48px;
+    width: calc(100% - 48px);
+  }
+
+}
+
+
+
+
