@@ -192,7 +192,7 @@ section{
   font-family: 'Montserrat', sans-serif;
   z-index: 10;
 }
-.player-left, .player-center, .player-right {
+.player-left, .player-center, .player-right{
   display: flex;
   align-items: center;
 }

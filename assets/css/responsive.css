@@ -336,6 +336,7 @@ html, body{
   .install-app, .user-profile{
     display: flex;
     align-items: center;
+    margin-top: 5px;
     font-size: 11px;
   }
   .install-app img, .user-profile img {
@@ -350,8 +351,6 @@ html, body{
     width: 20px;
     height: 20px;
   }
-  .install-app {
-}
   .divider{
     width: 100%;
     height: 1.3px;
@@ -367,7 +366,7 @@ html, body{
     justify-content: flex-end;
     align-items: center;
     padding: 0 20px;
-    z-index: 0;
+    z-index: 1;
   }
   .upgrade-btn{
     font-size: 11px;
@@ -392,18 +391,18 @@ html, body{
   margin-bottom: 10px;
   white-space: nowrap;
 }
-  .recently-played h2, .created-for h2, .popular-artists h2{
+ .recently-played h2, .created-for h2, .popular-artists h2{
     font-size: 18px;
     margin-bottom: 10px;
     margin-top: 15px;
     margin-left: 15px;
   }
-  .created-for .section-subtitle, .popular-artists .subtitle {
+   .created-for .section-subtitle, .popular-artists .subtitle {
     font-size: 13px;
     margin-bottom: 10px;
     margin-left: 15px;
   }
-  .recently-played .row, .created-for .row, .popular-artists .artist-row{
+   .recently-played .row, .created-for .row, .popular-artists .artist-row{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -412,6 +411,87 @@ html, body{
 .recently-played .col, .created-for .col, .popular-artists .col {
   width: calc(50% - 25px);
   max-width: none;
+}
+.player{
+  height: 75px;
+  padding-left: 10px;
+}
+.player-left img{
+  width: 38px;
+  height: 38px;
+}
+.track-info{
+    margin-right: 20px;
+    margin: 0;
+}
+.track-info h4{
+  font-size: 11px;
+}
+.track-info p{
+  font-size: 10px;
+  white-space: nowrap;
+}
+.track-icons{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-right: 20px;
+}
+.controls{
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 10px;
+}
+.controls i {
+  font-size: 15px;
+}
+.play-btn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.play-btn i {
+  font-size: 17px;
+  transform: translateX(1px);
+}
+.progress {
+  display: flex;
+  align-items: center;
+  font-size: 9px;
+  gap: 7px;
+  width: 100%;
+}
+.progress .bar {
+  flex: 1;
+  height: 4px;
+}
+.progress .bar-fill {
+  width: 18%;
+  height: 100%;
+}
+.player-right{
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  padding-left: 10px;
+}
+.player-right i{
+  font-size: 12px;
+}
+.volume-bar{
+  width: 70px;
+  height: 4px;
+  border-radius: 2px;
+  position: relative;
+}
+.volume-fill{
+  width: 25%;
+  height: 100%;
 }
 }
 
