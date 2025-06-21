@@ -280,9 +280,9 @@ html, body{
 /***************************************  Small (S): 576px≤width≤767px  **************************************/
 @media all and (min-width: 576px) and (max-width: 767px){
 .main-wrapper{
-  margin-left: 190px;
-  width: calc(100% - 190px);
-  padding: 70px 20px 100px;
+  margin-left: 170px;
+  width: calc(100% - 170px);
+  padding: 70px 10px 100px;
 }
   .sidebar{
   width: 190px;
@@ -367,7 +367,7 @@ html, body{
     justify-content: flex-end;
     align-items: center;
     padding: 0 20px;
-    z-index: 10;
+    z-index: 0;
   }
   .upgrade-btn{
     font-size: 11px;
@@ -382,7 +382,7 @@ html, body{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px 10px;
+  gap: 15px 30px;
   font-size: 11px;
   padding: 0;
   margin: 10px 0 20px;
@@ -396,23 +396,25 @@ html, body{
     font-size: 18px;
     margin-bottom: 10px;
     margin-top: 15px;
+    margin-left: 15px;
   }
   .created-for .section-subtitle, .popular-artists .subtitle {
     font-size: 13px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    margin-left: 15px;
   }
   .recently-played .row, .created-for .row, .popular-artists .artist-row{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 20px 15px;
+    gap: 50px 50px;
   }
-.recently-played .col, .created-for .col, .popular-artists .col{
-  width: calc(50% - 10px);
+.recently-played .col, .created-for .col, .popular-artists .col {
+  width: calc(50% - 25px);
   max-width: none;
 }
-
 }
+
 
 
 
