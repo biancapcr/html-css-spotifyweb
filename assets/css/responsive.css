@@ -308,7 +308,6 @@ html, body{
   left: -15px;
   width: 2.5px;
   height: 25px;
-  background-color: #1ed760;
   border-radius: 1px;
 }
    .sidebar-middle{
@@ -494,8 +493,145 @@ html, body{
   height: 100%;
 }
 }
-
-
+/***************************************  Medium (M): 768px≤width<992px **************************************/
+@media all and (min-width: 768px) and (max-width: 991px){
+.sidebar {
+  width: 175px;
+  }
+.main-wrapper {
+  margin-left: 175px;
+  width: calc(100% - 175px);
+}
+ .recently-played .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+    max-width: 560px;
+    margin: 0 auto;
+  }
+  .recently-played .col{
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .recently-played .card-image{
+    width: 120px;
+    height: 120px;
+  }
+.filter-bar ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px 30px;
+  font-size: 11px;
+  padding: 0;
+  margin: 10px 0 10px;
+}
+.filter-bar li{
+  text-align: center;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+.recently-played h2, .created-for h2, .popular-artists h2{
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+ .created-for .section-subtitle, .popular-artists .subtitle{
+    font-size: 12px;
+ }
+ .upgrade-btn{
+    font-size: 11px;
+    padding: 12px 25px;
+    border: 1px solid #fff;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 20px;
+    background: transparent;
+  }
+  .player{
+  height: 75px;
+  padding-left: 10px;
+}
+.player-left img{
+  width: 38px;
+  height: 38px;
+}
+.track-info{
+    margin-right: 20px;
+    margin: 0;
+}
+.track-info h4{
+  font-size: 11px;
+}
+.track-info p{
+  font-size: 10px;
+  white-space: nowrap;
+}
+.track-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-right: 20px;
+}
+.controls{
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 10px;
+}
+.controls i{
+  font-size: 15px;
+}
+.play-btn{
+  width: 30px;
+  border: 3px solid white;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.play-btn i{
+  font-size: 17px;
+  transform: translateX(1px);
+}
+.progress{
+  display: flex;
+  align-items: center;
+  font-size: 9px;
+  gap: 7px;
+  width: 100%;
+}
+.progress .bar{
+  flex: 1;
+  height: 3.5px;
+}
+.progress .bar-fill{
+  width: 18%;
+  height: 100%;
+}
+.player-right{
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 13px;
+  padding-left: 10px;
+}
+.player-right i{
+  font-size: 12px;
+}
+.volume-bar{
+  width: 70px;
+  height: 3.5px;
+  border-radius: 2px;
+  position: relative;
+}
+}
 
 
 
